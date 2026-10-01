@@ -37,9 +37,9 @@ export function HowItWorks() {
       <div className="mx-auto max-w-5xl px-6 py-20">
         <SectionHeading eyebrow="01" title="How it works" />
 
-        <ol className="mt-12 grid gap-px overflow-hidden rounded-lg border bg-border sm:grid-cols-2 lg:grid-cols-5">
+        <ol className="mt-12 grid gap-px overflow-hidden rounded-lg border bg-border/50 sm:grid-cols-2 lg:grid-cols-5">
           {steps.map((step, index) => (
-            <li key={step.title} className="flex flex-col gap-4 bg-background p-6">
+            <li key={step.title} className="flex flex-col gap-4 bg-background/60 p-6">
               <div className="flex items-center justify-between">
                 <span className="flex size-10 items-center justify-center rounded-md bg-accent text-accent-foreground">
                   <step.icon className="size-5" aria-hidden="true" />

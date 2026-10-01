@@ -7,7 +7,7 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-10 border-b bg-background/90 backdrop-blur">
+    <header className="sticky top-0 z-10 border-b bg-background/75 backdrop-blur-md">
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-6 px-6">
         <a href="#top" className="flex items-center gap-2 text-sm font-semibold">
           <span aria-hidden="true" className="size-2.5 rounded-full bg-primary" />
