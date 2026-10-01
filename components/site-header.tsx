@@ -7,17 +7,22 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-10 border-b bg-background/75 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-6 px-6">
+    <header className="sticky top-0 z-20 px-4 pt-4">
+      <div className="mx-auto flex h-12 max-w-6xl items-center justify-between gap-6 rounded-full border bg-background/80 pl-5 pr-2 shadow-sm backdrop-blur-md">
         <a href="#top" className="flex items-center gap-2 text-sm font-semibold">
-          <span aria-hidden="true" className="size-2.5 rounded-full bg-primary" />
+          <span aria-hidden="true" className="flex size-5 items-center justify-center rounded-full bg-foreground">
+            <span className="size-1.5 rounded-full bg-background" />
+          </span>
           Cloud Security Data Lake
         </a>
         <nav aria-label="Sections" className="hidden md:block">
-          <ul className="flex items-center gap-6 text-sm text-muted-foreground">
+          <ul className="flex items-center gap-1 text-sm text-muted-foreground">
             {links.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="transition-colors hover:text-foreground">
+                <a
+                  href={link.href}
+                  className="rounded-full px-3 py-1.5 transition-colors hover:bg-foreground hover:text-background"
+                >
                   {link.label}
                 </a>
               </li>

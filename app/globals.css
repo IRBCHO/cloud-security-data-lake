@@ -163,3 +163,77 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@utility animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@utility animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, oklch(0.145 0 0 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.145 0 0 / 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@utility bg-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    oklch(0.145 0 0 / 0.05) 0 1px,
+    transparent 1px 10px
+  );
+}
+
+@utility text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px oklch(0.145 0 0 / 0.35);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal[data-visible='true'] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-marquee,
+  .animate-blink {
+    animation: none;
+  }
+}

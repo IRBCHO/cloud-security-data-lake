@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { SiteHeader } from '@/components/site-header'
 import { Hero } from '@/components/hero'
+import { Marquee } from '@/components/marquee'
 import { HowItWorks } from '@/components/how-it-works'
 import { AttackingTheAssistant } from '@/components/attacking-the-assistant'
 import { WhyItMatters } from '@/components/why-it-matters'
@@ -25,6 +26,7 @@ export default function Page() {
         <SiteHeader />
         <main className="bg-background/70 backdrop-blur-md">
           <Hero />
+          <Marquee />
           <HowItWorks />
           <AttackingTheAssistant />
           <WhyItMatters />
