@@ -52,9 +52,9 @@ export function AttackingTheAssistant() {
                   Defense
                 </span>
               </div>
-              <h3 className="mt-8 text-2xl font-semibold">Can&apos;t be tricked</h3>
+              <h3 className="mt-8 text-2xl font-semibold">Harder to trick</h3>
               <p className="mt-3 leading-relaxed text-muted-foreground">
-                Defenses are added so the assistant can&apos;t be tricked.
+                Defenses are added so the assistant is harder to trick.
               </p>
             </article>
           </Reveal>
