@@ -1,30 +1,18 @@
-# cloud-security-data-lake
+# Cloud Security Data Lake — Project Site
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+The website for my portfolio project: a Cloud Security Data Lake with an AI Triage Assistant.
 
-## Built with v0
+**Live site:** https://cloud-security-data-lake.vercel.app
+**Project code:** coming soon
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## About the project
+I'm building a test AWS environment with Terraform, running safe simulated attacks against it, and sending the security logs into a data pipeline. SQL detection rules flag the attacks, and an AI assistant summarizes each alert. Then I test the AI assistant against prompt injection and add defenses.
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_5ha89bVQBE1Om6PztfP6INHDyphf)
+## About this site
+Built with v0 (Next.js) and deployed on Vercel. Every change pushed to `main` deploys automatically.
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
+## Author
+Benchaphorn (Irene) Cho 
 
 To learn more, take a look at the following resources:
 
